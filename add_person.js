@@ -9,10 +9,6 @@ var knex = require('knex')({
 });
 
 const input = process.argv.slice(2, 5)
-console.log(input)
-console.log(input[0])
-console.log(input[1])
-console.log(input[2])
 
 var newPerson = [
   {
