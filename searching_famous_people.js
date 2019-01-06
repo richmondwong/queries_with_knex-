@@ -8,13 +8,10 @@ var knex = require('knex')({
   }
 });
 
-
 const input = process.argv.slice(2).toString()
 
 knex.select('*').from('famous_people').where('first_name', input).then((results) => {
-
   var counter = 1;
-
   console.log('Searching ...');
   console.log('Found ' + results.length + ' person(s) by the name of ' + input);
   for (var x in results){
