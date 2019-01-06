@@ -8,7 +8,6 @@ var knex = require('knex')({
   }
 });
 
-
 const input = process.argv.slice(2, 5)
 console.log(input)
 console.log(input[0])
